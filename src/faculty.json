@@ -1,0 +1,91 @@
+ [
+     {
+       "id": 1,
+       "name": "John Doe",
+       "designation": "Professor",
+       "department": "Computer Science",
+       "email": "john.doe@example.com",
+       "phone": "+1 (555) 123-4567",
+       "photo": "https://via.placeholder.com/150"
+     },
+     {
+       "id": 2,
+       "name": "Jane Smith",
+       "designation": "Assistant Professor",
+       "department": "Electrical Engineering",
+       "email": "jane.smith@example.com",
+       "phone": "+1 (555) 234-5678",
+       "photo": "https://via.placeholder.com/150"
+     },
+     {
+       "id": 3,
+       "name": "Bob Johnson",
+       "designation": "Associate Professor",
+       "department": "Mechanical Engineering",
+       "email": "bob.johnson@example.com",
+       "phone": "+1 (555) 345-6789",
+       "photo": "https://via.placeholder.com/150"
+     },
+     {
+       "id": 4,
+       "name": "Alice Lee",
+       "designation": "Professor",
+       "department": "Chemistry",
+       "email": "alice.lee@example.com",
+       "phone": "+1 (555) 456-7890",
+       "photo": "https://via.placeholder.com/150"
+     },
+     {
+       "id": 5,
+       "name": "Mark Brown",
+       "designation": "Associate Professor",
+       "department": "Physics",
+       "email": "mark.brown@example.com",
+       "phone": "+1 (555) 567-8901",
+       "photo": "https://via.placeholder.com/150"
+     },
+     {
+       "id": 6,
+       "name": "Emily Davis",
+       "designation": "Professor",
+       "department": "Mathematics",
+       "email": "emily.davis@example.com",
+       "phone": "+1 (555) 678-9012",
+       "photo": "https://via.placeholder.com/150"
+     },
+     {
+       "id": 7,
+       "name": "Mike Wilson",
+       "designation": "Associate Professor",
+       "department": "Civil Engineering",
+       "email": "mike.wilson@example.com",
+       "phone": "+1 (555) 789-0123",
+       "photo": "https://via.placeholder.com/150"
+     },
+     {
+       "id": 8,
+       "name": "Lisa Rodriguez",
+       "designation": "Professor",
+       "department": "Biology",
+       "email": "lisa.rodriguez@example.com",
+       "phone": "+1 (555) 890-1234",
+       "photo": "https://via.placeholder.com/150"
+     },
+     {
+       "id": 9,
+       "name": "David Thomas",
+       "designation": "Assistant Professor",
+       "department": "Computer Science",
+       "email": "david.thomas@example.com",
+       "phone": "+1 (555) 901-2345",
+       "photo": "https://via.placeholder.com/150"
+     },
+     {
+       "id": 10,
+       "name": "Karen Martin",
+       "designation": "Associate Professor",
+       "department": "Psychology",
+       "email": "karen.martin@example.com",
+       "phone": "+1 (555) 012-3456",
+       "photo": "https://via.placeholder.com/150"
+     }] 
