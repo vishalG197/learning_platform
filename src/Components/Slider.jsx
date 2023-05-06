@@ -1,13 +1,11 @@
 import { Box, Image } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
-
+import img1 from "../Images/Screenshot 2023-05-05 182808.png"
+import CourseCard from "./CourseCard";
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const slides = [
-    "https://via.placeholder.com/800x400?text=Slide+1",
-    "https://via.placeholder.com/800x400?text=Slide+2",
-    "https://via.placeholder.com/800x400?text=Slide+3",
-    "https://via.placeholder.com/800x400?text=Slide+4",
+    <CourseCard/>,<CourseCard/>,<CourseCard/>,<CourseCard/>
   ];
   const intervalTime = 3000; // 3 seconds
 
@@ -23,7 +21,9 @@ const Slider = () => {
 
   return (
     <Box>
-       <Image src={slides[slideIndex]} alt={`Slide ${slideIndex + 1}`} w="100%" />
+      {/* <Image src="../Images/img-2.jpeg"/> */}
+       {/* <Image src={slides[slideIndex]} alt={`Slide ${slideIndex + 1}`} w="100%" /> */}
+       <CourseCard/>
       <Box style={{ display: "flex", justifyContent: "center" }}>
         {slides.map((_, idx) => (
           <span
