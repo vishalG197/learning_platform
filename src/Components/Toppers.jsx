@@ -1,5 +1,5 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Button, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, HStack, Heading, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import TopperCard from "./TopperCard";
 import data from "../toppers.json"
@@ -22,8 +22,9 @@ export default function Toppers(){
  
    const toggleShowAll = () => setShowAll(!showAll);
  
-   return <Box h="80vh" bg="skyblue">
-   <Text color="blue.100">Toppers</Text>
+   return <HStack>
+    <Box h="80vh" bg="" alight="top">
+   <Text color="blue.400">Toppers</Text>
    <Heading>NEET UG 2022</Heading>
    <Text>All India Rank (AIR)</Text>
    <Text>We successfully provide students with intensive courses by india's top faculties and personal mentors.</Text>
@@ -31,14 +32,15 @@ export default function Toppers(){
     Know more
   </Button>} */}
   <Button rightIcon={<ArrowForwardIcon />}
-        colorScheme="blue"
+        colorScheme="blue.400"
         variant="outline"
         onClick={toggleShowAll}
         mb={4}
       >
-        {showAll ? "Show Top 3" : "Know more"}
+        Know more
       </Button>
-
+</Box>
+<Box>
       <Grid templateColumns="repeat(3, 1fr)" gap={4}>
         {toppers
           .slice(0, showAll ? toppers.length : 3)
@@ -49,4 +51,5 @@ export default function Toppers(){
           ))}
       </Grid>
    </Box>
+   </HStack>
 }

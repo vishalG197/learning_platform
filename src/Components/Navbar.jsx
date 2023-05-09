@@ -1,16 +1,17 @@
 
 import { useState } from "react";
-import { Flex, Box, Image, IconButton, Menu, MenuButton, MenuItem, MenuList, Button } from "@chakra-ui/react";
+import { Flex, Box, Image, IconButton, Menu, MenuButton, MenuItem, MenuList, Button, Link } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router-dom";
 
  export default function Navbar(){
    const [isOpen, setIsOpen] = useState(false);
-
+   const navigate=useNavigate()
    const toggle = () => setIsOpen(!isOpen);
    return <Box w='100%'  >
   <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding="1rem">
       <Box display="flex" alignItems="center">
-        <Image src="../logo192.png" alt="Logo" w="120px"  h="40px"/>
+        <Image src="../logo192.png" alt="Logo" w="120px"  h="40px" onClick={()=>{navigate("/")}}/>
       </Box>
 
       <Box display={{ base: "block", md: "none" }} onClick={toggle}>
@@ -22,9 +23,9 @@ import { HamburgerIcon } from "@chakra-ui/icons";
           <Menu>
             <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="ghost" display={{ md: "none" }} />
             <MenuList>
-              <MenuItem>Home</MenuItem>
-              <MenuItem>About</MenuItem>
-              <MenuItem>Contact</MenuItem>
+              <MenuItem>contact us</MenuItem>
+              <MenuItem>About us</MenuItem>
+              <MenuItem>sign in</MenuItem>
             </MenuList>
           </Menu>
           <Box ml={{ base: 0, md: 4 }}>
@@ -43,7 +44,9 @@ import { HamburgerIcon } from "@chakra-ui/icons";
             Contact us
           </Box>
           <Box ml={{ base: 0, md: 4 }}>
-          <Button colorScheme='blue'>Sign In</Button>
+          <Button colorScheme='blue'>
+            <Link to="/login" onClick={()=>navigate("/login")}>Sign In</Link>
+            </Button>
           </Box>
         </Box>
       </Box>

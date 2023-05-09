@@ -1,7 +1,9 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Heading, Text, Button, Image, HStack } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, Image, HStack, Link } from "@chakra-ui/react";
 import img from "../Images/img1.png"
+import { useNavigate } from "react-router-dom";
 const CourseCard = ({ courseName, description, duration, fee }) => {
+  const navigate=useNavigate();
   return ( <Box
     ml="40px"
     W="100%"
@@ -33,7 +35,7 @@ const CourseCard = ({ courseName, description, duration, fee }) => {
     Know more
   </Button>
       <Button rightIcon={<ArrowForwardIcon />} colorScheme='blue' ml="10px">
-    Join Now
+   <Link to="/admission" onClick={()=>navigate("/admission")}>Join Now</Link> 
   </Button>
  
     </Box>

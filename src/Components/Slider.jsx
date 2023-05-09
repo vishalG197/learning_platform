@@ -21,8 +21,7 @@ const Slider = () => {
 
   return (
     <Box>
-      {/* <Image src="../Images/img-2.jpeg"/> */}
-       {/* <Image src={slides[slideIndex]} alt={`Slide ${slideIndex + 1}`} w="100%" /> */}
+     
        <CourseCard/>
       <Box style={{ display: "flex", justifyContent: "center" }}>
         {slides.map((_, idx) => (

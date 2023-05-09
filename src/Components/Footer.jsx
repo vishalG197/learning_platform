@@ -14,7 +14,7 @@ export default function Footer() {
           <Text mb={2}>Thalaghattapura Kanakapura Main Road,</Text>
           <Text mb={2}>Bengaluru -560062</Text>
           <Text mb={2}>Mobile Phone +91-9380462121</Text>
-          <Text mb={2}>Email: Designersunil23@gmail.com</Text>
+          <Text mb={2}>Email: vishalgiri197@gmail..com</Text>
         </Stack>
         <Stack spacing={6} mb={[8, null, 0]} mr={[0, null, 12]}>
           <Heading size="md">Follow Us On</Heading>
