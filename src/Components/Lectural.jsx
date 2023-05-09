@@ -6,7 +6,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import FacultyCard from "./FacultyCard"
 export default function Lectural(){
    const [showAll, setShowAll] = useState(false);
-   return <Box h="100vh" >
+   return <Box  >
    <HStack>
       <Box>
 <Text color="Blue.400">Our</Text>
